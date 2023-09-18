@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    
 
 }
 
@@ -9,8 +10,29 @@
     border: 1px solid black;
     border-radius: 15px;
     width: 240px;
-    background-color: rgba(6, 3, 3, 0.888);
-}
+    background-color: rgb(16, 16, 16);
+    margin: auto;
+    margin-top:50px;
+    
+    @media screen and (min-width: 768px){ background-color: rgb(87, 55, 55);
+        
+    
+    }
+    @media screen and (min-width: 1024px){ 
+        background-color: lavenderblush;
+        
+    }
+    
+    @media screen and (min-width: 1200px){ 
+        background-color: lavender;
+    
+    
+    }
+
+    }
+
+
+
 
 /*icon*/
 
@@ -38,25 +60,28 @@ ion-icon.ionic{
 .btn-container{
     margin-top: 100px;
     border: 1px;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     height:300px;
     background-color: rgb(40, 37, 37);
 }
 
-.btn-top{
+ .btn-top{
     font-size: 10px;
     padding: 9px;
     color: green;
-}
+} 
 
 #btn-top3{
     font-size: 10px;
     color: green;
 }
 
-.btn-side{
+ .btn-side{
 color: red;
-}
+} 
 
 .btn-bottom{
 margin-left: 3px;
@@ -72,14 +97,15 @@ margin-left: 10px;
 margin-top: 10px;
 margin-bottom:10px;
 padding:10px;
-margin-left: px;
-border: 1px solid black;
+border: 1px solid rgb(37, 33, 33);
 border-radius: 4px;
 color: white;
-background-color: black;
+background-color: rgb(38, 35, 35);
 }
 .h_line {
     border-bottom: 3px solid rgb(80, 80, 78);
     width: 100px;
     margin: auto;
 }
+ 
+    

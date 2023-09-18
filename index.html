@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>
-        <div>
-            <input  name=" Input" id="">
-        <div>
-            <button>AC</button>
-            <button>+/-</button>
-            <button>%</button>
-            <button>÷</button>
+    <div class="container-1">
+        <div class="toggle">
+             <button class="icon-btn"><ion-icon class="ionic" name="sunny-outline"></ion-icon> <ion-icon class="ionic"name="moon-outline"></ion-icon> 
+             </button> 
+            </div>
+        <div class="btn-container">
+            <button class="btn-top">AC</button>
+            <button class="btn-top">+/-</button>
+            <button id="btn-top3" class="btn-top4">%</button>
+            <button class="btn-side">÷</button>
+            <br>
+            <div class="btn-bottom">
             <button>7</button>
             <button>8</button>
             <button>9</button>
-            <button>x</button>
+            <button class="btn-side">x</button>
+            <br>
             <button>4</button>
             <button>5</button>
             <button>6</button>
-            <button>-</button>
+            <button class="btn-side">-</button>
+            <br>
             <button>1</button>
             <button>2</button>
             <button>3</button>
-            <button>+</button>
-            <button> <img src="reset image.png" alt="reset" style{
-                width="8px", height="10px"
-            }> </button>
+            <button class="btn-side">+</button>
+            <br>
+            <button><ion-icon name="refresh-outline"></ion-icon>
+            </button>
             <button>0</button>
             <button>.</button>
-            <button>=</button>
+            <button class="btn-side">=</button>
+        </div>
         </div>
     </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
 </body>
 </html>

@@ -7,11 +7,12 @@
 }
 
 .container-1{
-    border: 2px solid rgb(58, 57, 57);
+    border: 2px solid rgb(70, 68, 68);
     border-radius: 15px;
     width: 240px;
     height: 500px;
-    background-color: rgb(38, 35, 35);
+    /* background-color: rgb(38, 35, 35); */
+    background-color: rgb(40, 40, 40);
     margin: auto;
     margin-top:50px;
     
@@ -65,19 +66,16 @@ ion-icon.ionic{
 }
 
 .btn-container{
-    margin-top: 150px;
-    margin-bottom: 5px;
-    border: 2px  rgb(24, 23, 23);
+    margin-top: 20px;
+    border: 2px  rgb(72, 71, 71);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 10px;
     width: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(48, 47, 47);
+    background-color:   rgb(72, 71, 71);
     padding: 8px;
-    height: 305px;
+    height: 306px;
 }
 
  .btn-top{
@@ -96,23 +94,41 @@ color: rgb(213, 91, 112);
 } 
 
 button{
-border: 1px solid rgb(42, 40, 40);
+border: 1px solid rgb(55, 55, 55);
 border-radius: 10px;
-background-color: rgb(42, 40, 40);
+background-color: rgb(55, 55, 55);
 color: aliceblue;
-height: 40px;
-width: 40px;
+height: 35px;
+width: 35px;
 margin: 0 auto;
-font-weight: 200;
+font-weight: 100;
 font-size: small;
+font-family: sans-serif;
 
 }
 .h_line {
-    border-bottom: 3px solid rgb(80, 80, 78);
-    width: 100px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    border-bottom: 3px solid rgb(146, 146, 133);
+    margin: auto;
+    width: 70px;
+    border-radius: 4px;
+     
+    
+}
+.line{ height: auto;
+    width: auto;
+    background-color: rgb(72, 71, 71);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px; 
+    padding: 4px;
+    
 }
 
-    
+  .screen{
+    display: grid;
+    justify-content: end;
+    margin-top: 50px;
+    row-gap: 20px;
+    font-size: larger;
+    color: aliceblue;
+    font-weight: 300;
+  }  

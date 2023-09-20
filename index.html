@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="index.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <div class="container-1">
@@ -13,41 +14,36 @@
              </button> 
             </div>
             <div class="screen"> 
-                <p class="input"> input</p>
-                <p class="output"> output</p>
-        
+                <input placeholder='0' disabled class="input">
+                <input disabled class="output">
             </div>
-        
            <div class="btn-container">
-            <button class="btn-top">AC</button>
+            <button class="btn-top" id='AC'>AC</button>
             <button class="btn-top">+/-</button>
             <button class="btn-top">%</button>
             <button class="btn-side">÷</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
             <button class="btn-side">x</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
             <button class="btn-side">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
             <button class="btn-side">+</button>
-            <button><ion-icon name="refresh-outline"></ion-icon>
+            <button id="delete"><ion-icon name="refresh-outline"></ion-icon>
             </button>
-            <button>0</button>
-            <button>.</button>
-            <button class="btn-side">=</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button class="equal">=</button>
             </div>
         <div class="line">
             <p class="h_line"></p>
         </div>
-     
     </div>
-
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     

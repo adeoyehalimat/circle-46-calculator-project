@@ -85,7 +85,7 @@ ion-icon.ionic{
 
 
 
- .btn-side{
+ .btn-side, .equal{
 color: rgb(213, 91, 112);
 } 
 
@@ -132,3 +132,12 @@ font-family: sans-serif;
     color: aliceblue;
     font-weight: 300;
   }  
+
+  .input, .output {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    padding: 0 10px;
+  }

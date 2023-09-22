@@ -50,7 +50,7 @@ doubleOpsEl.addEventListener ('click' , function(){
 })
 modulusEl.addEventListener ('click', function (){
     if (modulusEl.textContent === '%'){
-        value = value / 100 ;
+        value = inputEl.value / 100 || outputEl.value / 100;
         inputEl.value = value;
     }
 })

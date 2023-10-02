@@ -6,16 +6,11 @@ const basicOperators = document.querySelectorAll('.btn-side')
 const equalEl = document.querySelector('.equal')
 const allClearEl = document.getElementById('AC')
 const deleteEl = document.getElementById('delete')
-const moduleEl=document.getElementById('module')
-const toggleEL=document.getElementById('toggle')
-
-
-
 
 
 numberEL.forEach((number) => (number.addEventListener('click', function () {
     let value = number.textContent;
-    inputEl.value+=value;
+    inputEl.value += value;
 })))
 
 basicOperators.forEach((operator) => (
@@ -40,13 +35,4 @@ allClearEl.addEventListener('click', function(){
 
 deleteEl.addEventListener('click', function(){
     inputEl.value = inputEl.value.slice(0, -1)
-})
-
-moduleEl.addEventListener('click', function(){
-    outputEl.value= eval(inputEl.value/100)
-    
-})
-
-toggleEL.addEventListener('click', function(){
-     inputEl.value=(- + inputEl.value)
 })

@@ -52,7 +52,7 @@ doubleOpsEl.addEventListener ('click' , function(){
 modulusEl.addEventListener ('click', function (){
     if (modulusEl.textContent === '%'){
         value = inputEl.value / 100 || outputEl.value / 100;
-        inputEl.value = value;
+         outputEl.value = value;
     }
 })
 toggleButton.addEventListener('click', function(){

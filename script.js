@@ -8,7 +8,8 @@ const allClearEl = document.getElementById('AC')
 const deleteEl = document.getElementById('delete')
 const doubleOpsEl = document.getElementById('doubleOps')
 const modulusEl = document.getElementById('percent')
-
+const toggleButton = document.querySelector('.icon-btn')
+const body = document.body
 
 numberEL.forEach((number) => (number.addEventListener('click', function () {
     let value = number.textContent;
@@ -54,3 +55,14 @@ modulusEl.addEventListener ('click', function (){
         inputEl.value = value;
     }
 })
+toggleButton.addEventListener('click', function(){
+    if(body.classList.contains('dark-theme')){
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+    }else if(body.classList.contains('light-theme')){
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+     }
+
+  });
+ 

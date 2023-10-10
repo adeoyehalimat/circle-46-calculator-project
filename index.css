@@ -3,32 +3,63 @@
     margin:0;
     box-sizing: border-box;
     
+}
+    
+
+
+body.dark-theme {
+    --background-color: #22252dff;
+    --toggle-background-theme:#292d36ff;
+    --toggle-background-border:#22252dff;
+    --toggle-background-button:#2f333cff ;
+    --toggle-input-inputText:  #fbf9f9ff;
+    --toggle-input-inputOps:#c26668ff ;
+    --toggle-output-outputText:#f3f4f4ff ;
+    --toggle-top-Opsbutton:#269585ff ;
+    --toggle-side-Opsbutton:#a65154ff ;
+    --toggle-number-button:#cccdcfff ;
+    --toggle-background-numberbutton:#262a33ff ;
+    --toggle-fullbackground-numberbutton:#292d36ff ;
+    --toggle-footerline:#454950ff ;
 
 }
+body.light-theme {
+    --background-color: #ffffffff;
+    --toggle-background-theme:#f9f9f9ff ;
+    --toggle-background-border:#fbf9f9ff ;
+    --toggle-background-button:#9b9da1ff ;
+    --toggle-input-inputText:#262931ff ;
+    --toggle-input-inputOps: #f8b6b6ff;
+    --toggle-output-outputText:#52565dff ;
+    --toggle-top-Opsbutton:#9bf8e8ff ;
+    --toggle-side-Opsbutton: #ef9999ff;
+    --toggle-number-button:#66696fff ;
+    --toggle-background-numberbutton:#f7f7f7ff ;
+    --toggle-fullbackground-numberbutton:#fbf9f9ff;
+    --toggle-footerline:#dfdfdfff ;
 
+}
+.btn-container{
+    margin-top: 20px;
+    border: 2px solid var(--toggle-fullbackground-numberbutton);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color:  var(--toggle-fullbackground-numberbutton);
+    padding: 8px;
+    height: 310px;
+}
 .container-1{
-    border: 2px solid rgb(70, 68, 68);
+    border: 2px solid var(--toggle-background-border);
     border-radius: 15px;
     width: 240px;
     height: 500px;
-    background-color: rgb(40, 40, 40);
+    background-color: var(--background-color);
     margin: auto;
     margin-top:50px;
     
-    /* @media screen and (min-width: 768px){ background-color: rgb(87, 55, 55);
-        
-    
-    }
-    @media screen and (min-width: 1024px){ 
-        background-color: lavenderblush;
-        
-    }
-    
-    @media screen and (min-width: 1200px){ 
-        background-color: lavender;
-    
-    
-    } */
 
     }
 
@@ -37,14 +68,13 @@
 
 /*icon*/
 
-ion-icon.ionic{
+ .ionic{
     margin-right: 10px;
     margin-left: 10px;
     font-size: 10px;
     margin-top: 6px;
-    margin-bottom: 10px;
-
-   
+    margin-bottom: 10px; 
+    
 }
 
 
@@ -56,47 +86,35 @@ ion-icon.ionic{
     justify-content: center;
     margin: 0 auto;
     margin-top: 20px;
-    border:1px solid rgb(38, 37, 37);
+    border:1px solid var(--toggle-background-theme);
     border-radius: 10px;
     height: 25px;
-    background-color: rgb(20, 20, 20);
+    background-color: var(--toggle-background-theme);
     
      
 }
 
-.btn-container{
-    margin-top: 20px;
-    border: 2px  rgb(72, 71, 71);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color:   rgb(72, 71, 71);
-    padding: 8px;
-    height: 306px;
-}
 
  .btn-top{
     font-size: 10px;
-    color: rgb(42, 222, 222);
+    color:  var(--toggle-top-Opsbutton);
 }  
 
 
 
  .btn-side, .equal{
-color: rgb(213, 91, 112);
+color: var(--toggle-side-Opsbutton);
 } 
 
 #img-icon{
-    color: white; 
+    color:  #cccdcfff; 
 } 
 
 button{
-border: 1px solid rgb(55, 55, 55);
+border: var(--background-color);
 border-radius: 10px;
-background-color: rgb(55, 55, 55);
-color: aliceblue;
+background-color: var(--toggle-background-numberbutton);
+color: var(--toggle-number-button);
 height: 35px;
 width: 35px;
 margin: 0 auto;
@@ -106,19 +124,21 @@ font-family: sans-serif;
 
 }
 .h_line {
-    border-bottom: 3px solid rgb(146, 146, 133);
+    border-bottom: 3px solid var(--toggle-footerline);
     margin: auto;
     width: 70px;
     border-radius: 4px;
+    
      
     
 }
-.line{ height: auto;
+.line{ 
+    height: auto;
     width: auto;
-    background-color: rgb(72, 71, 71);
+    background-color: var(--toggle-fullbackground-numberbutton) ;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px; 
-    padding: 4px;
+    padding:4px;
     
 }
 
@@ -128,15 +148,25 @@ font-family: sans-serif;
     margin-top: 50px;
     row-gap: 20px;
     font-size: larger;
-    color: aliceblue;
+    color: var(--toggle-input-inputText);
     font-weight: 300;
   }  
 
-  .input, .output {
+  .input {
     background: none;
     border: none;
     font-size: 18px;
-    color: #fff;
+    color: var(--toggle-input-inputText);
     text-align: right;
     padding: 0 10px;
   }
+  
+ .output {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--toggle-output-outputTex);
+    text-align: right;
+    padding: 0 10px;
+  }
+  
